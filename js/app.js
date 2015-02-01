@@ -1,21 +1,22 @@
 var max = 255, min = 0;
 var toto = 100, titi= 0;
-
+var $wrapper = $("#site-wrapper");
 $(document).ready(function(){
     var $mainImage = $("#main_img");
     var $title = $("body h1:nth-child(1)");
     var $imgRond = $(".item-img");
     var $menuA = $("nav a");
     var $siteCanvas = $("#site-canvas");
+    
 
 
     $menuA.click(function(){
         toggleNav();
     });
 
-    $(window).click(function(){
-        $title.css("background-color", randomColor());
-    });
+   // $(window).click(function(){
+    //    $title.css("background-color", randomColor());
+    //});
     $imgRond.click(function(){
         $(this).css("border-radius", randomForm()+"%");
     });
@@ -26,30 +27,35 @@ $(document).ready(function(){
     });
 
     $siteCanvas.click(function(){
-        if ($('#site-wrapper').hasClass('show-nav')) {
-            $('#site-wrapper').removeClass('show-nav');
+        if ($wrapper.hasClass('show-nav')) {
+            $wrapper.removeClass('show-nav');
         }
     });
+    window.onresize = resize;
 });
 
-/*function randomColor(){
-    return "rgb("+ Math.floor(Math.random() * (max - min + 1) + min) +","+
-    Math.floor(Math.random() * (max - min + 1) + min) +","+
-    Math.floor(Math.random() * (max - min + 1) + min) +")";
-}*/
 function randomForm(){
     return Math.floor(Math.random() * (toto - titi + 1) + titi);
 
 }
 
 function toggleNav() {
-    if ($('#site-wrapper').hasClass('show-nav')) {
+    if ($wrapper.hasClass('show-nav')) {
         // Do things on Nav Close
-        $('#site-wrapper').removeClass('show-nav');
+        $wrapper.removeClass('show-nav');
     } else {
         // Do things on Nav Open
-        $('#site-wrapper').addClass('show-nav');
+        $wrapper.addClass('show-nav');
     }
 
     //$('#site-wrapper').toggleClass('show-nav');
+}
+
+//Enleve le menu onresize
+function resize() {
+    if ($(window).width() > 800) {
+        if ($wrapper.hasClass('show-nav')) {
+            $wrapper.removeClass('show-nav');
+        }
+    }
 }
