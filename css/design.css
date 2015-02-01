@@ -13,6 +13,10 @@ body, h1, img, p, ul, li, nav, a {
 #block {
   background-color: black; }
 
+.titre {
+  font-size: .7em;
+  color: #666; }
+
 body {
   background: #FFF url(../asset/img/symphony.png) center repeat;
   background-attachment: fixed; }
@@ -163,7 +167,7 @@ h1 {
   background: pink;
   padding: 80px 10px 10px 2.5%;
   text-align: center;
-  color: blue;
+  color: black;
   font-weight: normal;
   font-size: 3em; }
   @media (max-width: 1024px) {
