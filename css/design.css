@@ -14,8 +14,7 @@ body, h1, img, p, ul, li, nav, a {
   background-color: black; }
 
 body {
-  background: #FFF url(../asset/img/symphony.png) center no-repeat;
-  background-size: cover;
+  background: #FFF url(../asset/img/symphony.png) center repeat;
   background-attachment: fixed; }
 
 #site-wrapper {
@@ -24,7 +23,7 @@ body {
   width: 100%; }
 
 .lien-bouton {
-  color: #fff;
+  color: pink;
   background: #000;
   display: inline-block;
   padding: 1em;
@@ -34,8 +33,9 @@ body {
   transition: all .2s ease-in; }
 
 .lien-bouton:hover {
-  border-color: #d769ff;
-  background: #d769ff; }
+  color: #000;
+  border-color: pink;
+  background: pink; }
 
 #site-canvas {
   width: 100%;
