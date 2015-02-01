@@ -14,7 +14,9 @@ body, h1, img, p, ul, li, nav, a {
 	.item-title{
 		color:white;
 	}
-
+	.item-detail {
+  color: #fff;
+}
 }
 .titre {
   font-size: .7em;
@@ -137,6 +139,7 @@ h1 {
 .img-contact{
 	max-height: 300px;
 	float: none !important;
+
 }
 
 #menu {

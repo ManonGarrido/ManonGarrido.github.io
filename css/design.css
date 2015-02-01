@@ -14,6 +14,8 @@ body, h1, img, p, ul, li, nav, a {
   background-color: rgba(0, 0, 0, 0.8); }
   #block .item-title {
     color: white; }
+  #block .item-detail {
+    color: #fff; }
 
 .titre {
   font-size: .7em;
