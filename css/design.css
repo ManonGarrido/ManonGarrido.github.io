@@ -11,7 +11,9 @@ body, h1, img, p, ul, li, nav, a {
   box-sizing: border-box; }
 
 #block {
-  background-color: black; }
+  background-color: rgba(0, 0, 0, 0.8); }
+  #block .item-title {
+    color: white; }
 
 .titre {
   font-size: .7em;
@@ -153,8 +155,8 @@ body {
 img {
   max-width: 100%;
   margin: 0;
-  padding: 0;
-  display: block; }
+  display: block;
+  padding: 1em; }
 
 a:link, a:visited, a {
   color: pink;
@@ -226,7 +228,7 @@ h1 {
       padding-top: 100px; } }
   .item .wrap-content {
     margin: 10%;
-    margin-bottom: 0%; }
+    margin-bottom: 5%; }
     @media (max-width: 1024px) {
       .item .wrap-content {
         margin: 5%;
@@ -270,7 +272,8 @@ h1 {
           .item .wrap-content .item-title::before {
             height: 0px; } }
     .item .wrap-content .item-img {
-      float: right; }
+      float: right;
+      margin: 0 auto; }
       @media (max-width: 769px) {
         .item .wrap-content .item-img {
           float: none;
@@ -307,7 +310,7 @@ h1 {
     .item .wrap-content .item-detail {
       margin-left: 0%;
       margin-right: 0%;
-      padding: 5px;
+      padding: 25px 0;
       text-align: justify; }
       @media (max-width: 480px) {
         .item .wrap-content .item-detail {

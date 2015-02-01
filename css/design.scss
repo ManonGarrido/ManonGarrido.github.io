@@ -10,7 +10,10 @@ body, h1, img, p, ul, li, nav, a {
 }
 
 #block{
-	background-color: black;
+	background-color: rgba(0, 0, 0, 0.8);
+	.item-title{
+		color:white;
+	}
 
 }
 .titre {
@@ -103,8 +106,8 @@ body{
 img {
 	max-width: 100%;
 	margin: 0;
-	padding: 0;
 	display: block;
+	padding: 1em;
 }
 
 a:link, a:visited, a {
@@ -189,7 +192,7 @@ h1 {
 
 	.wrap-content {
 		margin: 10%;
-		margin-bottom: 0%;
+		margin-bottom: 5%;
 
 		@media (max-width: 1024px){
 			margin: 5%;
@@ -241,7 +244,7 @@ h1 {
 		}
 		.item-img {
 			float: right;
-
+			margin: 0 auto;
 			@media (max-width: 769px){
 				float: none;
 				max-width: 100%;
@@ -282,7 +285,7 @@ h1 {
 		.item-detail {
 			margin-left: 0%;
 			margin-right: 0%;
-			padding: 5px;
+			padding: 25px 0;
 			text-align: justify;
 
 			@media (max-width: 480px){
