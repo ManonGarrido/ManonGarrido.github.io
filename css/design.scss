@@ -134,6 +134,10 @@ h1 {
 		padding-top: 100px;
 	}
 }
+.img-contact{
+	max-height: 300px;
+	float: none !important;
+}
 
 #menu {
 	background-color: rgba(42,42,42,0.7);
@@ -286,7 +290,7 @@ h1 {
 			margin-left: 0%;
 			margin-right: 0%;
 			padding: 25px 0;
-			text-align: justify;
+			text-align: center;
 
 			@media (max-width: 480px){
 				display: none;
